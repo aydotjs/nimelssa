@@ -243,3 +243,26 @@ article{
     outline: none;
     color: black;
 }
+@media screen and (max-width : 600px)  {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+    .card img{
+        height: 99%;
+    }
+   .cards .card .smaller-text{
+        font-size: 0.9em;
+    }
+    .sixth-section{
+        margin-top: 50px;
+    }
+    article h3{
+        white-space: nowrap;
+    }
+}
