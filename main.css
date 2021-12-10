@@ -1,10 +1,12 @@
 /* Header */
 header{
     margin: 0;
-    background: #fff;
+    background: rgb(251, 251, 251);
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 5;
 }
 header img{
    height: 60px; 
@@ -39,6 +41,11 @@ header img{
     transition: all 2s ease;
     height: 0;
     overflow: hidden;
+    position: relative;
+    position: relative;
+    z-index: 60;
+    background-color: white;
+    
 }
 .navbar__collapse{
     height: 100vh;
@@ -48,23 +55,73 @@ header img{
     text-decoration: none;
     padding: 0.4rem;
     font-size: 1.1rem;
-    color:  rgb(54, 131, 202);
+    color:  rgb(40, 102, 149);
     transition: all 1s ease;
+    position: relative;
+    z-index: 70;
 }
 .navbar__single-link:hover{
     padding-left: 1.5rem; 
 }
 /* This is where I started designing the first Section */
 .first-section{
-    background-color: white;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     text-align: center;
-    color: rgb(49, 44, 43);
+    background: url(./gallery-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation:slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        background: url(./gallery-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+    50%{
+        background: url(./gallery-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+    75%{
+        background: url(./gallery-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center top ;
+        background-size: cover;
+    }
+    100%{
+        background: url(./gallery-4.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+}
+.overlay{
+    background-color: #0000008a;
+    width: 100%;
+    height: 98%;
+    z-index: 1;
+    opacity: 0.8;
+    position: absolute;
+    top: 5px;
+    left: 0;
 }
 .first-section p{
+    position: relative;
     font-size: 1.5em;
+    z-index: 20;
+    color: white;
 }
+.first-section h1{
+    position: relative;
+    z-index: 20;
+    color: white;
+}
+
 .first-section button {
     background-color: rgb(88, 209, 240);
     color: white;
@@ -72,11 +129,15 @@ header img{
     border-radius: 5px;
     padding: 0.5em;
     font-weight: bold;
+    position: relative;
+    z-index: 20;
 }
 .first-section button a{
 text-decoration: none;
 color: white;
 }
+
+
 /* Second Section */
 .second-section{
     margin-top: 20px;
@@ -95,9 +156,11 @@ color: white;
     margin-right: 20px;
 }
 #presidentword{
-    font-weight: 1.2em;
+    font-weight:2.0em;
     margin-bottom: 19px;
     margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height:1.5 ;
 }
 #alignjoor{
     text-align: right;
@@ -113,8 +176,10 @@ color: white;
 
 }
 .second-section img{
-    height: 200px;
+    height:80vh;
     width: auto;
+  
+    
 }
 /* Thired Section */
 .third-section{
@@ -162,6 +227,11 @@ margin-bottom: 100px;
     background-color: rgb(32, 33, 34);
     color: white;
     padding: 10px;
+    font-family: 'Lora', serif;
+}
+.fifth-section a{
+    display: inline-block;
+    margin-right: 10px;
 }
 /* Sixth Section */
 .sixth-section{
@@ -185,11 +255,24 @@ footer{
     width: 100%;
 }
 
-.about-nimelssa-tab h3 a {
+.about-nimelssa-tab h3 a,.sixth-section div h3 a{
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
+.about-nimelssa-tab h3{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.centre{
+    display: flex;
+    flex-direction: row;
+}  
+.sixth-section div{
+   margin-bottom: -25px;
+}
+
+
 /* Content */
 article h3{
     text-decoration: underline;
@@ -243,6 +326,8 @@ article{
     outline: none;
     color: black;
 }
+
+
 @media screen and (max-width : 600px)  {
     .cards{
         display: flex;
