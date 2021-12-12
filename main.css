@@ -1,0 +1,369 @@
+/* Header */
+header{
+    margin: 0;
+    background: rgb(251, 251, 251);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 5;
+}
+header img{
+   height: 60px; 
+   width: auto;
+}
+/* Bar Animation */
+.navbar__btn{
+    align-self: center;
+    border: 4px solid rgb(54, 131, 202);
+    cursor: pointer;
+    
+}
+.bar1,.bar2,.bar3{
+    width: 25px;
+    height: 4px; 
+    margin: 0.5rem;
+    background: rgb(54, 131, 202);
+    transition: all 2s ease;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2{
+   opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-7px, -8px);
+}
+.navbar__links{
+    text-align: center;
+    list-style-type: none;
+    transition: all 2s ease;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    position: relative;
+    z-index: 60;
+    background: rgb(251, 251, 251); 
+}
+.navbar__collapse{
+    height: 100vh;
+}
+.navbar__single-link{
+    display: block;
+    text-decoration: none;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+    color:  rgb(40, 102, 149);
+    transition: all 1s ease;
+    position: relative;
+    z-index: 70;
+}
+.navbar__single-link:hover{
+    padding-left: 1.5rem; 
+}
+/* This is where I started designing the first Section */
+.first-section{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background: url(./gallery-1.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation:slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        background: url(./gallery-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+    50%{
+        background: url(./gallery-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+    75%{
+        background: url(./gallery-3.jpg);
+        background-repeat: no-repeat;
+        background-position: center top ;
+        background-size: cover;
+    }
+    100%{
+        background: url(./gallery-4.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+}
+.overlay{
+    background-color: #0000008a;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    top: -305px;
+    left: 0;
+}
+.first-section p{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 20;
+    color: white;
+}
+.first-section h1{
+    position: relative;
+    z-index: 20;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first-section button {
+    background-color: rgb(88, 209, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-weight: bold;
+    position: relative;
+    z-index: 20;
+}
+.first-section button a{
+text-decoration: none;
+color: white;
+}
+/* Second Section */
+.second-section{
+    margin-top: 20px;
+    background-color: rgb(54, 131, 202);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+.second-section p{
+    margin: 0 auto;
+}
+#frompresident{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+#presidentword{
+    font-weight:2.0em;
+    margin-bottom: 19px;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height:1.5 ;
+     max-width: 400px; 
+     padding: 10px;
+     margin: 0 auto;
+}
+#alignjoor{
+    text-align: right;
+    margin-right: 20px;
+    align-self: right;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.second-section button{
+    background-color: white;
+    padding: 0.5em;
+    color: rgb(54, 131, 202);
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.second-section img{
+    height:300px;
+    width: auto;
+}
+/* Thired Section */
+.third-section{
+    background-color: rgb(32, 33, 34);
+    color: rgb(212, 204, 204);
+    height: 70vh;
+    margin-top: -10px;
+    text-align: center;
+    padding: 10px;
+}
+.third-section p{
+color: rgb(116, 122, 122);
+font-size: 1.5em;
+margin-bottom: 100px;
+}
+.third-section button, .fourth-section button {
+    background-color: white;
+    padding: 0.5em;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* Fourth Section */
+
+.fourth-section{
+    background-color: rgb(228, 153, 13);
+    color: white;
+    text-align: center;
+    height: 50vh;
+    padding: 15px;
+    margin-top: -25px;
+}
+.fourth-section h2{
+    font-size: 2em;
+}
+.fourth-section h3{
+    font-size: 1.5em;
+}
+.fourth-section p{
+    font-size: 1.2em;
+}
+/* Fifth Section */
+.fifth-section{
+    background-color: rgb(32, 33, 34);
+    color: white;
+    padding: 10px;
+    font-family: 'Lora', serif;
+}
+.fifth-section a{
+    display: inline-block;
+    margin-right: 20px;
+}
+.socialbox{
+    display: flex;
+    align-items: center;
+}
+.social-link{
+    font-size: 2.5em;
+    color: white;
+    outline: none;
+}
+/* Sixth Section */
+.sixth-section{
+    background-color: rgb(32, 33, 34);
+    color: white;
+    padding: 10px;
+}
+/* Footer */
+footer{
+    background-color: rgb(32, 33, 34);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add ons {dark tab } */
+.about-nimelssa-tab{
+    background-color: rgb(32, 33, 34);
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+}
+
+.about-nimelssa-tab h3 a,.sixth-section div h3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.about-nimelssa-tab h3{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.centre{
+    display: flex;
+    flex-direction: row;
+}  
+.sixth-section div{
+   margin-bottom: -25px;
+}
+/* Content */
+article h3{
+    text-decoration: underline;
+}
+article{
+    padding: 2rem;
+    color: rgb(49, 44, 43);
+    line-height: 2;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+/* Images */
+.cards{
+    margin: 10px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.card{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    background-color: #eeeeee;
+    margin-bottom: 5px;
+
+    
+}
+.card img{
+    width: 100%;
+    display: block;
+    height: 80%;
+}
+.cardpreneur img{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.card p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  
+}
+.third-section button a,.fourth-section button a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+@media screen and (max-width : 600px)  {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .card img{
+        height: 99%;
+    }
+   .cards .card .smaller-text{
+        font-size: 0.9em;
+    }
+    .sixth-section{
+        margin-top: 50px;
+    }
+    article h3{
+        white-space: nowrap;
+    }
+}
+@media screen and (min-width : 600px){
+.bigtext{
+    font-size: 1.5em;
+}
+}
+.wrap{
+    margin: 0 auto;
+    max-width: 600px;
+}
