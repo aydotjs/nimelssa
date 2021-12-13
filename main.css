@@ -356,7 +356,7 @@ article{
 }
 @media screen and (min-width : 600px){
 .bigtext{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 }
 .wrap{
@@ -391,4 +391,15 @@ article{
     background-color:rgb(251, 248, 242);
     color: #0000008a;padding: 10px;
     max-height: 80px;
+}
+.poem{
+    list-style: none;
+}
+.poem li{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 0.8em;
+}
+.article3{
+    color: white;
 }
