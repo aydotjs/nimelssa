@@ -71,7 +71,7 @@ header img{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation:slide 20s infinite;
+    animation:slide 60s infinite;
 }
 @keyframes slide{
     25%{
