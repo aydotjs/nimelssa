@@ -67,6 +67,7 @@ header img{
     height: 100vh;
     width: 100%;
     text-align: center;
+    background-color: #0000008a;
     background: url(./gallery-1.JPG);
     background-repeat: no-repeat;
     background-position: center;
