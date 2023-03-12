@@ -1,0 +1,52 @@
+export const homeObjOne = {
+    id: 'president-speech',
+    lightBg:'blue',
+    bgBlue:true,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'From the President', 
+    headline: 'Oyebamiji Toba',
+    description: 'NIMELSSA UI still remains the standard. We are more than committed to excellence amidst the peculiarities of the  current clime and we continue to grow, thrive and own our spot on the global stage.',
+    buttonLabel: 'Read More',
+    to: "/president-speech",
+    imgStart: true,
+    img: require('../../images/president.jpg'),
+    dark: true,
+    primary: true, 
+    darkText: false
+}
+export const homeObjTwo= {
+    id: 'medpreneur',
+    lightBg: 'black',
+    lightText: true,
+    lightTextDesc: true,
+    download: 'download',
+    topLine: '', 
+    headline: "Medpreneur's Hub",
+    description: 'Check out our gallant entrepeneurs doing great things in fields other than medicine',
+    buttonLabel: 'Click to View',
+    imgStart: true,
+    img: require('../../images/medpreneur.svg').default,
+    alt: 'Medpreneur',
+    dark: true,
+    to:  "/medpreneur",
+    primary: true, 
+    darkText: false
+}
+export const homeObjThree= {
+    id: 'ibrt',
+    lightBg: 'true', 
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'IBRT', 
+    headline: 'Ibadan Bacteriophage Research Team',
+    description: 'A team of 8 biomedical science researchers at the University of Ibadan, led by Prof. O. G. Ademowo, envisioned new opportunities to foster early career research participation for young undergraduate students',
+    buttonLabel: 'Click to View',
+    imgStart: true,
+    to:  "/ibrt",
+    img: require('../../images/ibrt.png'),
+    alt: 'IBRT Image',
+    dark: false,
+    primary: false, 
+    darkText: true
+}
